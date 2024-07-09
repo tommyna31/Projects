@@ -1,0 +1,148 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tommyna31/Projects/blob/main/Calculator\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qrnof_CXb2qD",
+        "outputId": "56230f37-953e-4fe5-c88b-856f1291eae3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi! Welcome to the Calculator App!!\n",
+            "What do you want to do?\n",
+            "\t1) Addition\n",
+            "\t2) Subtraction\n",
+            "\t3) Multiplication\n",
+            "\t4) Division\n",
+            "\t5) Power\n",
+            "\t6) Exit\n",
+            "\n",
+            " Choose: 1\n",
+            "Enter first number: 7\n",
+            "Enter second number: 8\n",
+            "Your result is: 15\n",
+            "What do you want to do?\n",
+            "\t1) Addition\n",
+            "\t2) Subtraction\n",
+            "\t3) Multiplication\n",
+            "\t4) Division\n",
+            "\t5) Power\n",
+            "\t6) Exit\n",
+            "\n",
+            " Choose: 7\n",
+            "Ok, bye!\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hi! Welcome to the Calculator App!!\")\n",
+        "\n",
+        "active = True\n",
+        "while active:\n",
+        "  print(\"What do you want to do?\")\n",
+        "  menu = ['\\t1) Addition', '\\t2) Subtraction', '\\t3) Multiplication', '\\t4) Division', '\\t5) Power', '\\t6) Exit']\n",
+        "  for x in menu:\n",
+        "    print (x)\n",
+        "\n",
+        "  user_input = int(input(\"\\n Choose: \"))\n",
+        "\n",
+        "  if user_input == 1:\n",
+        "    def addition(a, b):\n",
+        "      return a + b\n",
+        "\n",
+        "    num1 = int(input(\"Enter first number: \"))\n",
+        "    num2 = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "    sum1 = addition(num1, num2)\n",
+        "    print(f\"Your result is: {sum1}\")\n",
+        "\n",
+        "  elif user_input == 2:\n",
+        "    def subtraction(a, b):\n",
+        "      return a - b\n",
+        "\n",
+        "    num1 = int(input(\"Enter first number: \"))\n",
+        "    num2 = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "    sum1 = subtraction(num1, num2)\n",
+        "    print(f\"Your result is: {sum1}\")\n",
+        "\n",
+        "  elif user_input == 3:\n",
+        "    def multiplication(a, b):\n",
+        "      return a * b\n",
+        "\n",
+        "    num1 = int(input(\"Enter first number: \"))\n",
+        "    num2 = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "    sum1 = multiplication(num1, num2)\n",
+        "    print(f\"Your result is: {sum1}\")\n",
+        "\n",
+        "  elif user_input == 4:\n",
+        "    def division(a, b):\n",
+        "      return a / b\n",
+        "\n",
+        "    num1 = int(input(\"Enter first number: \"))\n",
+        "    num2 = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "    sum1 = division(num1, num2)\n",
+        "    print(f\"Your result is: {sum1}\")\n",
+        "\n",
+        "\n",
+        "  elif user_input == 5:\n",
+        "    def power(a, b):\n",
+        "      return a**b\n",
+        "\n",
+        "    num1 = int(input(\"Enter number: \"))\n",
+        "    num2 = int(input(\"Enter exponent: \"))\n",
+        "\n",
+        "    sum1 = power(num1, num2)\n",
+        "    print(f\"Your result is: {sum1}\")\n",
+        "\n",
+        "  else:\n",
+        "    print(\"Ok, bye!\")\n",
+        "    break\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "s9_SklqwzP9u"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
